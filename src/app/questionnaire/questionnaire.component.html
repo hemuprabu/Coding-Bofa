@@ -1,0 +1,15 @@
+<div class="questionComp " *ngFor="let quest of questionData">
+    <div class="questionnaireTxt">
+        <label id="questionnaireLbl">{{quest.question}}</label>
+    </div>
+    <div class="questionnaireRadio">
+        <mat-radio-group 
+        aria-labelledby="ques-group-label"
+        class="ques-radio-Group"
+        (change)="onChange($event)">
+            <mat-radio-button  class="ques-radio-btn" color="primary" *ngFor= "let ans of quest.answers"  [value]="ans">
+                {{ans}}
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+</div>

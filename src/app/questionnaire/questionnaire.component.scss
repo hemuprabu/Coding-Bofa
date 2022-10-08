@@ -1,0 +1,16 @@
+.questionComp {
+  margin: 0px 10px;
+
+  #questionnaireLbl {
+    font-weight: bold;
+  }
+
+  .ques-radio-Group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  .ques-radio-btn {
+    margin: 5px;
+  }
+}
